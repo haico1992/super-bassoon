@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Loading
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 6d5e7d6e4fa23464dae9e399e87f4bd3, type: 2}
+  mSprites:
+  - name: Loading0015
+    x: 1274
+    y: 1426
+    width: 407
+    height: 291
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 49
+    paddingRight: 184
+    paddingTop: 117
+    paddingBottom: 72
+  - name: Loading0016
+    x: 1198
+    y: 1123
+    width: 409
+    height: 285
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 50
+    paddingRight: 181
+    paddingTop: 122
+    paddingBottom: 73
+  - name: Loading0017
+    x: 0
+    y: 787
+    width: 403
+    height: 306
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 58
+    paddingRight: 179
+    paddingTop: 125
+    paddingBottom: 49
+  - name: Loading0018
+    x: 0
+    y: 471
+    width: 388
+    height: 315
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 74
+    paddingRight: 178
+    paddingTop: 127
+    paddingBottom: 38
+  - name: Loading0019
+    x: 418
+    y: 1090
+    width: 371
+    height: 318
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 93
+    paddingRight: 176
+    paddingTop: 128
+    paddingBottom: 34
+  - name: Loading0020
+    x: 418
+    y: 781
+    width: 370
+    height: 308
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 101
+    paddingRight: 169
+    paddingTop: 128
+    paddingBottom: 44
+  - name: Loading0021
+    x: 0
+    y: 157
+    width: 380
+    height: 313
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 92
+    paddingRight: 168
+    paddingTop: 128
+    paddingBottom: 39
+  - name: Loading0022
+    x: 0
+    y: 1094
+    width: 415
+    height: 308
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 57
+    paddingRight: 168
+    paddingTop: 128
+    paddingBottom: 44
+  - name: Loading0023
+    x: 1267
+    y: 1738
+    width: 424
+    height: 310
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 46
+    paddingRight: 170
+    paddingTop: 128
+    paddingBottom: 42
+  - name: Loading0024
+    x: 411
+    y: 1743
+    width: 440
+    height: 305
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 32
+    paddingRight: 168
+    paddingTop: 127
+    paddingBottom: 48
+  - name: Loading0025
+    x: 843
+    y: 1416
+    width: 430
+    height: 301
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 39
+    paddingRight: 171
+    paddingTop: 127
+    paddingBottom: 52
+  - name: Loading0026
+    x: 418
+    y: 1409
+    width: 424
+    height: 308
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 44
+    paddingRight: 172
+    paddingTop: 126
+    paddingBottom: 46
+  - name: Loading0027
+    x: 0
+    y: 1403
+    width: 417
+    height: 314
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 45
+    paddingRight: 178
+    paddingTop: 124
+    paddingBottom: 42
+  - name: Loading0028
+    x: 852
+    y: 1726
+    width: 414
+    height: 322
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 46
+    paddingRight: 180
+    paddingTop: 121
+    paddingBottom: 37
+  - name: Loading0029
+    x: 0
+    y: 1718
+    width: 410
+    height: 330
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 48
+    paddingRight: 182
+    paddingTop: 118
+    paddingBottom: 32
+  - name: Loading0030
+    x: 790
+    y: 1120
+    width: 407
+    height: 288
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 48
+    paddingRight: 185
+    paddingTop: 117
+    paddingBottom: 75
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
