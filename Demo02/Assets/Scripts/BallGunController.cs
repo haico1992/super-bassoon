@@ -36,7 +36,6 @@ public class BallGunController : MonoBehaviour {
 		BallInstantList [ballIndex].localPosition = Vector3.zero;
 		int targetIndex = Random.Range (0, targets.Length);
 		var target= BallInstantList [ballIndex].position-targets [Random.Range (0, targets.Length)].position;
-		Debug.Log("target: "+ targetIndex);
 		BallInstantList [ballIndex].GetComponent<BallScript> ().particle.gameObject.SetActive (false);
 		BallInstantList [ballIndex].GetComponent<Rigidbody> ().mass = 0.1f;
 		BallInstantList [ballIndex].GetComponent<Rigidbody> ().velocity = Vector3.zero;
