@@ -13,7 +13,7 @@ public class ClientTestScript : MonoBehaviour {
 	public CustomNetworkDiscovery netDiscovery;
 	public UIGrid grid;
 	private int MessageChannel;
-	DeviceRotaion msg = new DeviceRotaion ();
+	DeviceTransform msg = new DeviceTransform ();
 	private Dictionary<string,int> hostList =  new Dictionary<string, int>();
 	string hostAddress;
 	bool isStart=false;
@@ -22,7 +22,7 @@ public class ClientTestScript : MonoBehaviour {
 		netDiscovery.OnReceivedBoardCastCallback = OnReceiveServer;
 
 		Input.gyro.enabled = true;
-		Input.gyro.updateInterval = 0.0166f; //(60Hz)
+		Input.gyro.updateInterval = 0.006f; //(333Hz)
 		netDiscovery.Initialize ();
 		netDiscovery.StartAsClient();
 	}
@@ -32,15 +32,14 @@ public class ClientTestScript : MonoBehaviour {
 	}
 	// Update is called once per frame
 	int counter;
-	void Update () {
-
-		//myClient.SendBytes (GetBytes("asd"), "asd".Length, MessageChannel);
-
+	void FixedUpdate () {
+		
 
 		if (isStart) {
 			msg.rotation = Input.gyro.attitude;
+			msg.acceleration = Input.acceleration;
 			msg.mess = (counter++).ToString ();
-			myClient.Send ((int)Define.CustomMsgType.Rotation, msg);
+			myClient.Send ((int)Define.CustomMsgType.Transform, msg);
 		}
 	}
 
@@ -67,7 +66,7 @@ public class ClientTestScript : MonoBehaviour {
 
 	public void OnClickCalibrate(){
 		isStart = true;
-		DeviceRotaion msg = new DeviceRotaion ();
+		DeviceTransform msg = new DeviceTransform ();
 		msg.rotation = Input.gyro.attitude;
 		myClient.Send ((int)Define.CustomMsgType.Calibrate, msg);
 
@@ -114,5 +113,12 @@ public class ClientTestScript : MonoBehaviour {
 public class DeviceRotaion : MessageBase
 {
 	public Quaternion rotation;
+	public string mess;
+}
+
+public class DeviceTransform : MessageBase
+{
+	public Quaternion rotation;
+	public Vector3 acceleration;
 	public string mess;
 }

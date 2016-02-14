@@ -1643,7 +1643,7 @@ static public class NGUITools
 	}
 #endif
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR&& false
 	static int mSizeFrame = -1;
 	static System.Reflection.MethodInfo s_GetSizeOfMainGameView;
 	static Vector2 mGameSize = Vector2.one;

@@ -19,6 +19,7 @@ public class ClientManager : NetworkBehaviour {
 	private Quaternion originRotation;
 	private Vector3 output;
 	public Quaternion deviceRotation;
+	public Vector3 deviceAcceleration;
 
 	private NetworkClient myClient;
 	// Use this for initialization
@@ -48,8 +49,9 @@ public class ClientManager : NetworkBehaviour {
 //	}
 
 	public void GetRootPosition( Quaternion root){
-		avatar.transform.localRotation = root;
+		avatar.localRotation = root;
 		avatar.parent.localRotation= Quaternion.Inverse(avatar.localRotation);
+		avatar.parent.Rotate (Vector3.up,0,Space.World);
 	}
 
 //	void ShowOrigin ()
@@ -64,7 +66,9 @@ public class ClientManager : NetworkBehaviour {
 //	}
 
 	void GetMotionFixedUpdate(){		
-		avatar.transform.localRotation = deviceRotation;
+		//avatar.transform.localRotation = Quaternion.LerpUnclamped(deviceRotation,avatar.transform.localRotation,0.06f);
+		avatar.transform.localRotation =new  Quaternion(deviceRotation.x*-1,deviceRotation.y,deviceRotation.z,deviceRotation.w*-1);
+		deviceAcceleration = Vector3.zero;
 	}
 
 
